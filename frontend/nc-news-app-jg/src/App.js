@@ -1,12 +1,20 @@
 import './App.css';
+import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-     
-      </header>
-    </div>
+    <BrowserRouter>
+      
+      {console.log("inisde app page")}
+        <Header />
+        <Main />
+        <Footer />
+      
+    </BrowserRouter>
+
   );
 }
 
