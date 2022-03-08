@@ -1,10 +1,12 @@
 import React from 'react'
+import ArticlesBoard from './ArticlesBoard'
 
 export default function HomePage() {
   return (
-    <div>\
+    <div className='homePage'>
       HomePage
-        {console.log("inisde home page")}
+        {/* {console.log("inisde home page")} */}
+        <ArticlesBoard />
       </div>
   )
 }
