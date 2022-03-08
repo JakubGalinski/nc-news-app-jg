@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function NavBar() {
   return (
-    <div>NavBar</div>
+    <div className='navBar'>
+        {/* {console.log("inisde navBar comp")} */}
+      NavBar
+      </div>
   )
 }

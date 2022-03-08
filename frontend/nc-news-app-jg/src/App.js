@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       
-      {console.log("inisde app page")}
+      {/* {console.log("inisde app page")} */}
         <Header />
         <Main />
         <Footer />
