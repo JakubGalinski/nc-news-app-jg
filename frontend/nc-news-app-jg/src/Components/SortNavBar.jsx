@@ -5,7 +5,7 @@ export default function SortNavBar() {
     <div className='sortNavBar'>
         {/* {console.log("inisde SortNavBar comp")} */}
 
-        SortNavBar
+        SortNavBar   - SortBY and OrderBy buttons
         </div>
   )
 }

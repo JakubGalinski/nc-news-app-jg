@@ -1,35 +1,41 @@
-body{
-  text-align: center;
-  background-color: rgb(191, 191, 230, 1);
-
+body {
+	text-align: center;
+	background-color: rgb(191, 191, 230, 1);
 }
 
 .App {
-  text-align: center;
-  background-color: rgb(191, 191, 230, 1);
+	text-align: center;
+	background-color: rgb(191, 191, 230, 1);
+	padding-left: 0px;
 }
 
-
-h1{
-   color:blueviolet;
+h1 {
+	color: blueviolet;
 }
 
-li{
-  list-style: none;
+li {
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
 }
 
-.header{
-  text-align: center;
-
+ul {
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
 }
 
-.navBar{
-  border-style: solid;
-  border-color: blue;
+.header {
+	text-align: center;
 }
 
-button{
-  margin: 10px;
+.navBar {
+	border-style: solid;
+	border-color: blue;
+}
+
+button {
+	margin: 10px;
 }
 
 /* .homePage{
@@ -38,40 +44,70 @@ button{
   margin: 15px;
 } */
 
-.articlesBoard{
-  margin: 15px;
-  border-style: dashed
- 
+.articlesBoard {
+	margin-left: 0px;
+	border-style: dashed;
 }
 
-.sortNavBar{
-  margin: 15px;
-  border-style: double;
+.sortNavBar {
+	margin: 15px;
+	border-style: double;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
 }
 
-.articlesList{
-  margin: 15px;
-  border-style: dotted;
-  border-color: red;
+.articlesList {
+	margin-left: 0px;
+	border-style: dotted;
+	border-color: red;
+	padding-left: 0px;
 }
 
-.articleCard{
-  margin: 15px;
-  border-style: dashed;
-  border-color: rgb(184, 24, 85);
+.article-list-ul{
+
+	padding-left: 0px;
+	margin-left: 0px;
 }
 
-.footer{
-  margin: 15px;
-  border-style: double;
-  border-color: blue;
-
+.articleCardList {
+	margin: 0x;
+	padding: 0px;
+	padding-left: 0px;
+	border-style: dashed;
+	border-color: rgb(184, 24, 85);
 }
 
-.topicCardSingle{
-  border-style: dotted;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 5px;
-  margin-right: 5px;
+.singleArticle{
+	margin-left: 0px;
+	padding-left: 0px;
+	border-style: solid;
+	border-color: gray;
+}
+
+.footer {
+	margin: 15px;
+	margin-left: 0px;
+	padding: 0px;
+	border-style: double;
+	border-color: blue;
+}
+
+.topicCard{
+  padding-left: 0px;
+}
+
+.topicCardSingle {
+	border-style: dotted;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: 0px;
+	margin-right: 5px;
+  padding-left: 0px;
+}
+
+.topics {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0px;
 }
