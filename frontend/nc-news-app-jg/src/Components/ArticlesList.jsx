@@ -12,19 +12,19 @@ export default function ArticlesList() {
 	}, []);
 	return (
 		<div className="articlesList">
-			<section>
-				<ul>
-					List of articles should display here
+			<section>	List of articles should display here
+				{/* <ul>
+				
 					{articles.map((article) => {
 						return ( 
 
             <li key={article.article_id}>
              <p>{article.title} </p>
-              {/* here will be a link to go to single Article card which will get clicked article by its ID */}
+              { here will be a link to go to single Article card which will get clickedarticle by its ID }
             </li>)
            
 					})}
-				</ul>
+				</ul> */}
 			</section>
 		</div>
 	);

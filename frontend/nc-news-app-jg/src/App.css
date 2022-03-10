@@ -1,10 +1,21 @@
+body{
+  text-align: center;
+  background-color: rgb(191, 191, 230, 1);
+
+}
+
 .App {
   text-align: center;
- 
+  background-color: rgb(191, 191, 230, 1);
 }
+
 
 h1{
    color:blueviolet;
+}
+
+li{
+  list-style: none;
 }
 
 .header{
@@ -17,6 +28,10 @@ h1{
   border-color: blue;
 }
 
+button{
+  margin: 10px;
+}
+
 /* .homePage{
   border-style: dotted;
   border-color:rgb(8, 117, 117);
@@ -26,6 +41,7 @@ h1{
 .articlesBoard{
   margin: 15px;
   border-style: dashed
+ 
 }
 
 .sortNavBar{
@@ -52,3 +68,10 @@ h1{
 
 }
 
+.topicCardSingle{
+  border-style: dotted;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
