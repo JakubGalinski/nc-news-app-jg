@@ -14,7 +14,7 @@ export default function ArticleCard() {
 	}, [article_id]);
 
 	return (
-		<ul className="article">
+		<ul className="articleCardList">
 			<h3>{article.title} </h3>
 			<h4> Author: {article.author}</h4>
 			<li>{article.body}</li>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { getArtilcesAll } from "../api";
 import ArticleCard from "./ArticleCard";
 
@@ -12,19 +13,23 @@ export default function ArticlesList() {
 	}, []);
 	return (
 		<div className="articlesList">
-			<section>	List of articles should display here
-				{/* <ul>
-				
+			<section>
+				<ul className="article-list-ul">
 					{articles.map((article) => {
-						return ( 
-
-            <li key={article.article_id}>
-             <p>{article.title} </p>
-              { here will be a link to go to single Article card which will get clickedarticle by its ID }
-            </li>)
-           
+						return (
+							<li className="singleArticle" key={article.article_id}>
+								<h4>{article.title} </h4>
+								<p>Topic: {article.topic}</p>
+								<Link
+									to={`/articles/${article.article_id}`}
+									className="linkTopicCard"
+								>
+									<button>Go to article</button>
+								</Link>
+							</li>
+						);
 					})}
-				</ul> */}
+				</ul>
 			</section>
 		</div>
 	);

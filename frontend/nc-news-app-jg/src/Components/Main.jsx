@@ -15,7 +15,7 @@ export default function Main() {
 				<Route path="/" element={<ArticlesBoard />}></Route>
 				<Route path="/api/topics" element={<Topics />}></Route>
 				<Route path='/api/topics/:params' element={<TopicCard />}></Route>
-				<Route path="/articles/:article_id" element={<ArticleCard></ArticleCard>}></Route>
+				<Route path="/articles/:article_id" element={<ArticleCard />}></Route>
 			</Routes>
 		</div>
 	);

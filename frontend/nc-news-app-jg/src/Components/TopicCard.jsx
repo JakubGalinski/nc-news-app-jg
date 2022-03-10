@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getArticlesByTopic } from "../api";
+import SortNavBar from "./SortNavBar";
 
 export default function TopicCard() {
 	const { params } = useParams();
@@ -15,6 +16,7 @@ export default function TopicCard() {
 
 	return (
 		<div>
+			<SortNavBar />
 			<ul className="topicCard">
 				{articles.map((article) => {
 					return (
@@ -23,7 +25,8 @@ export default function TopicCard() {
 							<p>Topic :{article.topic}</p>
 							<Link
 								to={`/articles/${article.article_id}`}
-								className="linkTopicCard">
+								className="linkTopicCard"
+							>
 								<button>Go to article</button>
 							</Link>
 						</li>
