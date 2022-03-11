@@ -4,7 +4,7 @@ import ArticleCard from "./ArticleCard";
 import ArticlesBoard from "./ArticlesBoard";
 import NavBar from "./NavBar";
 import TopicCard from "./TopicCard";
-import Topics from "./Topics";
+import Topics from "./TopicsCard";
 
 export default function Main() {
 	return (
@@ -14,7 +14,7 @@ export default function Main() {
 			<Routes>
 				<Route path="/" element={<ArticlesBoard />}></Route>
 				<Route path="/api/topics" element={<Topics />}></Route>
-				<Route path='/api/topics/:params' element={<TopicCard />}></Route>
+				<Route path='/api/topics/:topic' element={<TopicCard />}></Route>
 				<Route path="/articles/:article_id" element={<ArticleCard />}></Route>
 			</Routes>
 		</div>

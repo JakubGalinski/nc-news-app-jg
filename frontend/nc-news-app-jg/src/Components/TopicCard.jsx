@@ -4,15 +4,15 @@ import { getArticlesByTopic } from "../api";
 import SortNavBar from "./SortNavBar";
 
 export default function TopicCard() {
-	const { params } = useParams();
+	const { topic } = useParams();
 
 	const [articles, setArticlesByTopic] = useState([]);
 
 	useEffect(() => {
-		getArticlesByTopic(params).then(({ articles }) => {
+		getArticlesByTopic(topic).then(({ articles }) => {
 			setArticlesByTopic(articles);
 		});
-	}, [params]);
+	}, [topic]);
 
 	return (
 		<div>
@@ -21,13 +21,13 @@ export default function TopicCard() {
 				{articles.map((article) => {
 					return (
 						<li key={article.article_id} className="topicCardSingle">
-							<p>{article.title}</p>
-							<p>Topic :{article.topic}</p>
+							<h4>{article.title}</h4>
+							<h5>Topic :{article.topic}</h5>
 							<Link
 								to={`/articles/${article.article_id}`}
 								className="linkTopicCard"
 							>
-								<button>Go to article</button>
+								Go to article
 							</Link>
 						</li>
 					);

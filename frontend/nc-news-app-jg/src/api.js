@@ -13,7 +13,6 @@ export function getTopics() {
   return axios
     .get(`https://nc-news-example-seminar-3-4.herokuapp.com/api/topics`)
     .then((res) => {
-      // console.log(res.data.articles[0].title , "res in getAT")
       return res.data;
     })
 }
@@ -29,12 +28,17 @@ export function getArticlesByTopic(params) {
 }
 
 export function getArticleById(id) {
-
-
   return axios
     .get(`https://nc-news-example-seminar-3-4.herokuapp.com/api/articles/${id}`)
     .then((response) => {
-
-      return response.data;
+       return response.data;
     });
+}
+
+export function patchArticleVote(id, votes) {
+  return axios
+  .patch(`https://nc-news-example-seminar-3-4.herokuapp.com/api/articles/${id}`, { inc_votes:`${votes}`} )
+  .then((res) => {
+  })
+
 }

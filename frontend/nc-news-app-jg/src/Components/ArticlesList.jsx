@@ -23,8 +23,7 @@ export default function ArticlesList() {
 								<Link
 									to={`/articles/${article.article_id}`}
 									className="linkTopicCard"
-								>
-									<button>Go to article</button>
+								>Go to article
 								</Link>
 							</li>
 						);
