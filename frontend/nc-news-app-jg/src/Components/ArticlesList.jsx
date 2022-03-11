@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getArtilcesAll } from "../api";
-import ArticleCard from "./ArticleCard";
 
 export default function ArticlesList() {
 	const [articles, setArticlesAll] = useState([]);
@@ -13,7 +12,6 @@ export default function ArticlesList() {
 	}, []);
 	return (
 		<div className="articlesList">
-			<section>
 				<ul className="article-list-ul">
 					{articles.map((article) => {
 						return (
@@ -29,7 +27,6 @@ export default function ArticlesList() {
 						);
 					})}
 				</ul>
-			</section>
 		</div>
 	);
 }

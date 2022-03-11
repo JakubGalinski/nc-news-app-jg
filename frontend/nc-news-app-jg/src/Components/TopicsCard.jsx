@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { Link, useOutletContext } from "react-router-dom";
+import { Link, useParams, } from "react-router-dom";
 import { getTopics } from "../api";
 import Loading from "./Loading";
 
 export default function Topics() {
+	const { article_id } = useParams();
 	const [topics, setTopics] = useState([]);
 
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		getTopics().then(({ topics }) => {
+		getTopics(article_id).then(({ topics }) => {
 			setTopics(topics);
 			setIsLoading(false);
 		});

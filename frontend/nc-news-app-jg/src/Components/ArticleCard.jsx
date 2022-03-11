@@ -1,8 +1,8 @@
-import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getArticleById } from "../api";
 import ArticleVoteHandler from "./ArticleVoteHandler";
+import CommentList from "./CommentList";
 import Loading from "./Loading";
 
 export default function ArticleCard() {
@@ -19,7 +19,12 @@ export default function ArticleCard() {
 		});
 	}, [article_id]);
 
-	if (isLoading) return (<><Loading /></>)
+	if (isLoading)
+		return (
+			<>
+				<Loading />
+			</>
+		);
 	return (
 		<ul className="articleCardList">
 			<h3>{article.title} </h3>
@@ -31,6 +36,13 @@ export default function ArticleCard() {
 			<p>
 				Comments: <strong>{article.comment_count}</strong>
 			</p>
+			
+			<Link
+				to={`/api/articles/comments/${article_id}`}
+				className="commentsLink"
+			>
+				Go to comments
+			</Link>
 			<p>
 				Topic: <strong>{article.topic}</strong>
 			</p>
